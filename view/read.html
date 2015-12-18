@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Student Management System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/jumbotron.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Student Management System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Student Management System</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+		<div class="col-md-3">
+          
+        </div>
+        <div class="col-md-6">
+          <h2>Create Student</h2>
+			<form role="form" class="form-horizontal" action="search.html" method="post">
+				<div class="form-group">
+					<label class="control-label" for="FirstName">First Name</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="FirstName" name="FirstName" value="Amitabha" disabled="disabled">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="LastName">Last Name</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="LastName" name="LastName" value="Roy" disabled="disabled">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="RollNumber">Roll Number</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="RollNumber" name="RollNumber" value="" disabled="disabled">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="Email">Email</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="email" class="form-control" id="Email" name="Email" value="" disabled="disabled">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="MobileNo">Mobile No</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="MobileNo" name="MobileNo" value="" disabled="disabled">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="Age">Age</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="Age" name="Age" value="" disabled="disabled">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="DOB">DOB</label>
+					<input type="date" class="form-control" id="DOB" name="DOB" disabled="disabled" />
+				</div>
+				<div class="form-group">
+					<label class="control-label">Gender</label>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="radio" name="Gender" id="Gender" value="1" />
+						</span>
+						<label class="form-control">Male</label>
+						<span class="input-group-addon">
+							<input type="radio" name="Gender" id="Gender" value="2" checked="checked" />
+						</span>
+						<label class="form-control">Female</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Language Known</label>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="checkbox" name="LanguageKnown" id="LanguageKnown" value="1" />
+						</span>
+						<label class="form-control">C</label>
+						<span class="input-group-addon">
+							<input type="checkbox" name="LanguageKnown" id="LanguageKnown" value="2" checked="checked" />
+						</span>
+						<label class="form-control">Java</label>
+						<span class="input-group-addon">
+							<input type="checkbox" name="LanguageKnown" id="LanguageKnown" value="2" checked="checked" />
+						</span>
+						<label class="form-control">ASP.NET</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<a class="btn btn-info" href="update.html?id=1">Update</a>
+					<a class="btn btn-danger" href="delete.html?id=1">Delete</a>
+				</div>
+			</form>
+        </div>
+		<div class="col-md-3">
+          
+        </div>
+      </div>
+
+
+	  <footer class="footer">
+		<div class="container">
+			<p class="text-muted">&copy; 2015 Company, Inc.</p>
+		</div>
+	</footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="js/submitform.js"></script>
+
+  </body>
+</html>

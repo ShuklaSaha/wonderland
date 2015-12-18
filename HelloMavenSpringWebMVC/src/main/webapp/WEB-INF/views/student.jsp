@@ -1,12 +1,20 @@
+
 <html>
+
 <head>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sticky-footer-navbar.css">
+<link rel="stylesheet" type="text/css" href="../css/jumbotron.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script src="../js/submitform.js"></script>
 </head>
+ 
 <body onload="document.myform.firstname.focus()">
 	<h2>STUDENT FORM</h2>
 	
 <form name="student" method="post" onsubmit="return formValidation()" action="/HelloMavenSpringWebMVC/student/create">
-<table>
+<table class="table table-hover">
 <tr>
 <td>First Name:</td>
 <td><input type="text" name="firstname" size="18"/></td>
@@ -49,7 +57,7 @@
 <td><input type="checkbox" name="language" value="ASP"><label>ASP.NET</label></td>
 </tr>
 <tr>
-<td><input type="submit" value="Submit"></td>
+<td><input type="button" value="Submit here"  class="btn btn-primary"></td>
 </tr>
 
 </table>

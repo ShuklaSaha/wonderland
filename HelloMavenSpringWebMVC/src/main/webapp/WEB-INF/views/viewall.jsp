@@ -6,7 +6,7 @@
 			
 
 			
-			<table border="1px" cellpadding="0" cellspacing="0">  
+			<table border="1">  
 	<thead>  
 		<tr>  
 		<th width="10%">FirstName</th>
